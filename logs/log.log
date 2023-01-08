@@ -1,49 +1,226 @@
-06-01-2023 03:02:06.364 [main] INFO  c.n.c.m.CardMicroserviceApplicationTests.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
-06-01-2023 03:02:11.564 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
-06-01-2023 03:02:11.828 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 254 ms. Found 1 Reactive MongoDB repository interfaces.
-06-01-2023 03:02:12.293 [main] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId - BeanFactory id=7c1c22f8-270f-3f67-88fe-96c104207a4e
-06-01-2023 03:02:12.414 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'com.nttdata.card.microservice.client.AccountClient' of type [reactivefeign.spring.config.ReactiveFeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-06-01-2023 03:02:12.416 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'com.nttdata.card.microservice.client.ConsumptionClient' of type [reactivefeign.spring.config.ReactiveFeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-06-01-2023 03:02:12.418 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'com.nttdata.card.microservice.client.CustomerClient' of type [reactivefeign.spring.config.ReactiveFeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-06-01-2023 03:02:12.425 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'com.nttdata.card.microservice.client.ProductClient' of type [reactivefeign.spring.config.ReactiveFeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-06-01-2023 03:02:12.427 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'com.nttdata.card.microservice.client.TransactionClient' of type [reactivefeign.spring.config.ReactiveFeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-06-01-2023 03:02:12.978 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-06-01-2023 03:02:12.985 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-06-01-2023 03:02:12.995 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-06-01-2023 03:02:14.578 [main] INFO  org.mongodb.driver.client.info - MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./11.0.17+8-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@1fa18f87, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@1d9bd1d6], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@18ac4af6]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@117fb9ba], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
-06-01-2023 03:02:14.725 [main] WARN  o.s.data.convert.CustomConversions.register - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
-06-01-2023 03:02:15.136 [main] WARN  o.s.data.convert.CustomConversions.register - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
-06-01-2023 03:02:15.233 [cluster-rtt-ClusterId{value='63b7d586e85db93b3723793e', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:2, serverValue:1011}] to localhost:27017
-06-01-2023 03:02:15.231 [cluster-ClusterId{value='63b7d586e85db93b3723793e', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:1, serverValue:1012}] to localhost:27017
-06-01-2023 03:02:15.238 [cluster-ClusterId{value='63b7d586e85db93b3723793e', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=145887800}
-06-01-2023 03:02:15.730 [nioEventLoopGroup-2-3] INFO  org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:3, serverValue:1013}] to localhost:27017
-06-01-2023 03:02:21.006 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 1 endpoint(s) beneath base path '/actuator'
-06-01-2023 03:02:22.300 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration.restTemplateDiscoveryClientOptionalArgs - Eureka HTTP Client uses RestTemplate.
-06-01-2023 03:02:22.571 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.logWarning - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-06-01-2023 03:02:22.702 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory.create - Setting initial instance status as: STARTING
-06-01-2023 03:02:22.841 [main] INFO  c.netflix.discovery.DiscoveryClient.<init> - Initializing Eureka in region us-east-1
-06-01-2023 03:02:22.851 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
-06-01-2023 03:02:22.891 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
-06-01-2023 03:02:22.891 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
-06-01-2023 03:02:22.892 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
-06-01-2023 03:02:22.892 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
-06-01-2023 03:02:22.893 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
-06-01-2023 03:02:22.893 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: true
-06-01-2023 03:02:22.894 [main] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
-06-01-2023 03:02:23.389 [main] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
-06-01-2023 03:02:23.396 [main] INFO  c.netflix.discovery.DiscoveryClient.initScheduledTasks - Starting heartbeat executor: renew interval is: 30
-06-01-2023 03:02:23.400 [main] INFO  c.n.discovery.InstanceInfoReplicator.<init> - InstanceInfoReplicator onDemand update allowed rate per min is 4
-06-01-2023 03:02:23.410 [main] INFO  c.netflix.discovery.DiscoveryClient.<init> - Discovery Client initialized at timestamp 1672992143408 with initial instances count: 7
-06-01-2023 03:02:23.430 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry.register - Registering application CARD-MICROSERVICE with eureka with status UP
-06-01-2023 03:02:23.431 [main] INFO  c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1672992143431, current=UP, previous=STARTING]
-06-01-2023 03:02:23.436 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_CARD-MICROSERVICE/card-microservice:14c42aa9-55ac-46ff-b409-172eb65e81f0: registering service...
-06-01-2023 03:02:23.475 [main] INFO  c.n.c.m.CardMicroserviceApplicationTests.logStarted - Started CardMicroserviceApplicationTests in 20.49 seconds (JVM running for 23.031)
-06-01-2023 03:02:23.521 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_CARD-MICROSERVICE/card-microservice:14c42aa9-55ac-46ff-b409-172eb65e81f0 - registration status: 204
-06-01-2023 03:02:24.437 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry.deregister - Unregistering application CARD-MICROSERVICE with eureka with status DOWN
-06-01-2023 03:02:24.438 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1672992144438, current=DOWN, previous=UP]
-06-01-2023 03:02:24.438 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_CARD-MICROSERVICE/card-microservice:14c42aa9-55ac-46ff-b409-172eb65e81f0: registering service...
-06-01-2023 03:02:24.447 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_CARD-MICROSERVICE/card-microservice:14c42aa9-55ac-46ff-b409-172eb65e81f0 - registration status: 204
-06-01-2023 03:02:28.587 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient.shutdown - Shutting down DiscoveryClient ...
-06-01-2023 03:02:31.594 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient.unregister - Unregistering ...
-06-01-2023 03:02:31.609 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient.unregister - DiscoveryClient_CARD-MICROSERVICE/card-microservice:14c42aa9-55ac-46ff-b409-172eb65e81f0 - deregister  status: 200
-06-01-2023 03:02:31.614 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient.shutdown - Completed shut down of DiscoveryClient
+07-01-2023 22:00:37.952 [main] INFO  c.n.c.m.CardMicroserviceApplicationTests.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+07-01-2023 22:00:40.984 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+07-01-2023 22:00:41.296 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 302 ms. Found 1 Reactive MongoDB repository interfaces.
+07-01-2023 22:00:42.094 [main] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId - BeanFactory id=7c1c22f8-270f-3f67-88fe-96c104207a4e
+07-01-2023 22:00:42.322 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'com.nttdata.card.microservice.client.AccountClient' of type [reactivefeign.spring.config.ReactiveFeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-01-2023 22:00:42.328 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'com.nttdata.card.microservice.client.ConsumptionClient' of type [reactivefeign.spring.config.ReactiveFeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-01-2023 22:00:42.331 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'com.nttdata.card.microservice.client.CustomerClient' of type [reactivefeign.spring.config.ReactiveFeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-01-2023 22:00:42.335 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'com.nttdata.card.microservice.client.ProductClient' of type [reactivefeign.spring.config.ReactiveFeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-01-2023 22:00:42.337 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'com.nttdata.card.microservice.client.TransactionClient' of type [reactivefeign.spring.config.ReactiveFeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-01-2023 22:00:43.072 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-01-2023 22:00:43.082 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-01-2023 22:00:43.121 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-01-2023 22:00:45.238 [main] INFO  org.mongodb.driver.client.info - MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./11.0.17+8-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@727956bb, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@6ffbf0ac], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@ad5cffa]}, clusterSettings={hosts=[mongodb:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@237aa0c7], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+07-01-2023 22:00:45.401 [main] WARN  o.s.data.convert.CustomConversions.register - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+07-01-2023 22:00:45.942 [main] WARN  o.s.data.convert.CustomConversions.register - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+07-01-2023 22:00:46.445 [main] INFO  org.mongodb.driver.cluster.info - No server chosen by com.mongodb.reactivestreams.client.internal.ClientSessionHelper$$Lambda$1169/0x00000008007c4c40@43719e98 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+07-01-2023 22:00:47.561 [cluster-ClusterId{value='63ba31dd36b83a0f50f9366b', description='null'}-mongodb:27017] INFO  org.mongodb.driver.cluster.info - Exception in monitor thread while connecting to server mongodb:27017
+com.mongodb.MongoSocketException: mongodb
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.net.UnknownHostException: mongodb
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:883) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1378) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306) ~[na:na]
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209) ~[mongodb-driver-core-4.6.1.jar:na]
+	... 6 common frames omitted
+07-01-2023 22:00:58.749 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 1 endpoint(s) beneath base path '/actuator'
+07-01-2023 22:01:01.789 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration.restTemplateDiscoveryClientOptionalArgs - Eureka HTTP Client uses RestTemplate.
+07-01-2023 22:01:02.630 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.logWarning - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+07-01-2023 22:01:02.840 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory.create - Setting initial instance status as: STARTING
+07-01-2023 22:01:03.049 [main] INFO  c.netflix.discovery.DiscoveryClient.<init> - Initializing Eureka in region us-east-1
+07-01-2023 22:01:03.070 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+07-01-2023 22:01:03.143 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+07-01-2023 22:01:03.144 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+07-01-2023 22:01:03.164 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+07-01-2023 22:01:03.164 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+07-01-2023 22:01:03.165 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+07-01-2023 22:01:03.166 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: true
+07-01-2023 22:01:03.166 [main] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+07-01-2023 22:01:03.784 [main] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
+07-01-2023 22:01:03.789 [main] INFO  c.netflix.discovery.DiscoveryClient.initScheduledTasks - Starting heartbeat executor: renew interval is: 30
+07-01-2023 22:01:03.794 [main] INFO  c.n.discovery.InstanceInfoReplicator.<init> - InstanceInfoReplicator onDemand update allowed rate per min is 4
+07-01-2023 22:01:03.808 [main] INFO  c.netflix.discovery.DiscoveryClient.<init> - Discovery Client initialized at timestamp 1673146863807 with initial instances count: 3
+07-01-2023 22:01:03.822 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry.register - Registering application CARD-MICROSERVICE with eureka with status UP
+07-01-2023 22:01:03.824 [main] INFO  c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1673146863824, current=UP, previous=STARTING]
+07-01-2023 22:01:03.865 [main] INFO  c.n.c.m.CardMicroserviceApplicationTests.logStarted - Started CardMicroserviceApplicationTests in 29.413 seconds (JVM running for 31.432)
+07-01-2023 22:01:03.906 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_CARD-MICROSERVICE/card-microservice:fad94b35-cd62-4d15-99f9-6541b5c97e3a: registering service...
+07-01-2023 22:01:04.376 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_CARD-MICROSERVICE/card-microservice:fad94b35-cd62-4d15-99f9-6541b5c97e3a - registration status: 204
+07-01-2023 22:01:05.481 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry.deregister - Unregistering application CARD-MICROSERVICE with eureka with status DOWN
+07-01-2023 22:01:05.486 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1673146865486, current=DOWN, previous=UP]
+07-01-2023 22:01:05.493 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_CARD-MICROSERVICE/card-microservice:fad94b35-cd62-4d15-99f9-6541b5c97e3a: registering service...
+07-01-2023 22:01:05.570 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_CARD-MICROSERVICE/card-microservice:fad94b35-cd62-4d15-99f9-6541b5c97e3a - registration status: 204
+07-01-2023 22:01:07.686 [cluster-63ba31dd36b83a0f50f9366b] ERROR o.s.d.m.core.ReactiveMongoTemplate.handleSubscriptionException - Unexpected exception during asynchronous execution
+org.springframework.data.mongodb.ClientSessionException: state should be: open; nested exception is java.lang.IllegalStateException: state should be: open
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:148) ~[spring-data-mongodb-3.4.6.jar:3.4.6]
+	at org.springframework.data.mongodb.core.ReactiveMongoTemplate.potentiallyConvertRuntimeException(ReactiveMongoTemplate.java:2962) ~[spring-data-mongodb-3.4.6.jar:3.4.6]
+	at org.springframework.data.mongodb.core.ReactiveMongoTemplate.lambda$translateException$89(ReactiveMongoTemplate.java:2945) ~[spring-data-mongodb-3.4.6.jar:3.4.6]
+	at reactor.core.publisher.Flux.lambda$onErrorMap$28(Flux.java:7070) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onError(MonoFlatMapMany.java:255) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onError(FluxConcatArray.java:207) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onError(MonoIgnoreElements.java:84) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:192) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:259) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onError(MonoPeekTerminal.java:258) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:201) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoCreate.subscribe(MonoCreate.java:61) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:157) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1802) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoCallable.subscribe(MonoCallable.java:62) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4490) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onComplete(FluxSwitchIfEmpty.java:82) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoCreate$DefaultMonoSink.success(MonoCreate.java:140) ~[reactor-core-3.4.25.jar:3.4.25]
+	at com.mongodb.reactivestreams.client.internal.ClientSessionHelper.lambda$createClientSessionMono$2(ClientSessionHelper.java:67) ~[mongodb-driver-reactivestreams-4.6.1.jar:na]
+	at com.mongodb.internal.connection.BaseCluster$ServerSelectionRequest.onResult(BaseCluster.java:449) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.BaseCluster$WaitQueueHandler.run(BaseCluster.java:519) ~[mongodb-driver-core-4.6.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.lang.IllegalStateException: state should be: open
+	at com.mongodb.assertions.Assertions.isTrue(Assertions.java:79) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.BaseCluster.selectServerAsync(BaseCluster.java:147) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.SingleServerCluster.selectServerAsync(SingleServerCluster.java:44) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.binding.AsyncClusterBinding.getAsyncClusterBindingConnectionSource(AsyncClusterBinding.java:147) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.binding.AsyncClusterBinding.getWriteConnectionSource(AsyncClusterBinding.java:137) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.operation.OperationHelper.withAsyncConnection(OperationHelper.java:609) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.operation.CreateIndexesOperation.executeAsync(CreateIndexesOperation.java:209) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.reactivestreams.client.internal.OperationExecutorImpl.lambda$execute$10(OperationExecutorImpl.java:120) ~[mongodb-driver-reactivestreams-4.6.1.jar:na]
+	at reactor.core.publisher.MonoCreate.subscribe(MonoCreate.java:58) ~[reactor-core-3.4.25.jar:3.4.25]
+	... 13 common frames omitted
+07-01-2023 22:01:09.770 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient.shutdown - Shutting down DiscoveryClient ...
+07-01-2023 22:01:12.787 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient.unregister - Unregistering ...
+07-01-2023 22:01:12.806 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient.unregister - DiscoveryClient_CARD-MICROSERVICE/card-microservice:fad94b35-cd62-4d15-99f9-6541b5c97e3a - deregister  status: 200
+07-01-2023 22:01:12.813 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient.shutdown - Completed shut down of DiscoveryClient
+07-01-2023 22:27:04.733 [main] INFO  c.n.c.m.CardMicroserviceApplicationTests.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+07-01-2023 22:27:07.075 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+07-01-2023 22:27:07.503 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 417 ms. Found 1 Reactive MongoDB repository interfaces.
+07-01-2023 22:27:09.034 [main] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId - BeanFactory id=7c1c22f8-270f-3f67-88fe-96c104207a4e
+07-01-2023 22:27:09.242 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'com.nttdata.card.microservice.client.AccountClient' of type [reactivefeign.spring.config.ReactiveFeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-01-2023 22:27:09.244 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'com.nttdata.card.microservice.client.ConsumptionClient' of type [reactivefeign.spring.config.ReactiveFeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-01-2023 22:27:09.245 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'com.nttdata.card.microservice.client.CustomerClient' of type [reactivefeign.spring.config.ReactiveFeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-01-2023 22:27:09.246 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'com.nttdata.card.microservice.client.ProductClient' of type [reactivefeign.spring.config.ReactiveFeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-01-2023 22:27:09.248 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'com.nttdata.card.microservice.client.TransactionClient' of type [reactivefeign.spring.config.ReactiveFeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-01-2023 22:27:09.899 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-01-2023 22:27:09.910 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-01-2023 22:27:09.923 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-01-2023 22:27:12.102 [main] INFO  org.mongodb.driver.client.info - MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./11.0.17+8-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@7ac1b6c0, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@3a751535], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@7fb82f73]}, clusterSettings={hosts=[mongodb:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@2f166d61], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+07-01-2023 22:27:12.371 [main] WARN  o.s.data.convert.CustomConversions.register - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+07-01-2023 22:27:14.271 [main] WARN  o.s.data.convert.CustomConversions.register - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+07-01-2023 22:27:14.369 [cluster-ClusterId{value='63ba380f26c7d0091b64e205', description='null'}-mongodb:27017] INFO  org.mongodb.driver.cluster.info - Exception in monitor thread while connecting to server mongodb:27017
+com.mongodb.MongoSocketException: Host desconocido (mongodb)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.net.UnknownHostException: Host desconocido (mongodb)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1378) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306) ~[na:na]
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209) ~[mongodb-driver-core-4.6.1.jar:na]
+	... 6 common frames omitted
+07-01-2023 22:27:14.771 [main] INFO  org.mongodb.driver.cluster.info - No server chosen by com.mongodb.reactivestreams.client.internal.ClientSessionHelper$$Lambda$1171/0x00000008007c4c40@75c15f76 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: Host desconocido (mongodb)}, caused by {java.net.UnknownHostException: Host desconocido (mongodb)}}]}. Waiting for 30000 ms before timing out
+07-01-2023 22:27:14.934 [cluster-ClusterId{value='63ba380f26c7d0091b64e205', description='null'}-mongodb:27017] INFO  org.mongodb.driver.cluster.info - Exception in monitor thread while connecting to server mongodb:27017
+com.mongodb.MongoSocketException: mongodb
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.connection.netty.NettyStream.openAsync(NettyStream.java:163) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.connection.netty.NettyStream.open(NettyStream.java:154) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.net.UnknownHostException: mongodb
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1378) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306) ~[na:na]
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209) ~[mongodb-driver-core-4.6.1.jar:na]
+	... 6 common frames omitted
+07-01-2023 22:27:24.082 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 1 endpoint(s) beneath base path '/actuator'
+07-01-2023 22:27:26.426 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration.restTemplateDiscoveryClientOptionalArgs - Eureka HTTP Client uses RestTemplate.
+07-01-2023 22:27:26.864 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.logWarning - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+07-01-2023 22:27:27.005 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory.create - Setting initial instance status as: STARTING
+07-01-2023 22:27:27.236 [main] INFO  c.netflix.discovery.DiscoveryClient.<init> - Initializing Eureka in region us-east-1
+07-01-2023 22:27:27.250 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver.getClusterEndpoints - Resolving eureka endpoints via configuration
+07-01-2023 22:27:27.308 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Disable delta property : false
+07-01-2023 22:27:27.309 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Single vip registry refresh property : null
+07-01-2023 22:27:27.310 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Force full registry fetch : false
+07-01-2023 22:27:27.311 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application is null : false
+07-01-2023 22:27:27.311 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Registered Applications size is zero : true
+07-01-2023 22:27:27.312 [main] INFO  c.netflix.discovery.DiscoveryClient.fetchRegistry - Application version is -1: true
+07-01-2023 22:27:27.312 [main] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - Getting all instance registry info from the eureka server
+07-01-2023 22:27:28.156 [main] INFO  c.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry - The response status is 200
+07-01-2023 22:27:28.165 [main] INFO  c.netflix.discovery.DiscoveryClient.initScheduledTasks - Starting heartbeat executor: renew interval is: 30
+07-01-2023 22:27:28.177 [main] INFO  c.n.discovery.InstanceInfoReplicator.<init> - InstanceInfoReplicator onDemand update allowed rate per min is 4
+07-01-2023 22:27:28.189 [main] INFO  c.netflix.discovery.DiscoveryClient.<init> - Discovery Client initialized at timestamp 1673148448187 with initial instances count: 7
+07-01-2023 22:27:28.216 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry.register - Registering application CARD-MICROSERVICE with eureka with status UP
+07-01-2023 22:27:28.218 [main] INFO  c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1673148448218, current=UP, previous=STARTING]
+07-01-2023 22:27:28.231 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_CARD-MICROSERVICE/card-microservice:42e259f0-3c10-451a-8fad-78265d266256: registering service...
+07-01-2023 22:27:28.306 [main] INFO  c.n.c.m.CardMicroserviceApplicationTests.logStarted - Started CardMicroserviceApplicationTests in 28.101 seconds (JVM running for 30.614)
+07-01-2023 22:27:28.971 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_CARD-MICROSERVICE/card-microservice:42e259f0-3c10-451a-8fad-78265d266256 - registration status: 204
+07-01-2023 22:27:29.807 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry.deregister - Unregistering application CARD-MICROSERVICE with eureka with status DOWN
+07-01-2023 22:27:29.810 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient.notify - Saw local status change event StatusChangeEvent [timestamp=1673148449810, current=DOWN, previous=UP]
+07-01-2023 22:27:29.814 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_CARD-MICROSERVICE/card-microservice:42e259f0-3c10-451a-8fad-78265d266256: registering service...
+07-01-2023 22:27:29.840 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient.register - DiscoveryClient_CARD-MICROSERVICE/card-microservice:42e259f0-3c10-451a-8fad-78265d266256 - registration status: 204
+07-01-2023 22:27:31.877 [cluster-63ba380f26c7d0091b64e205] ERROR o.s.d.m.core.ReactiveMongoTemplate.handleSubscriptionException - Unexpected exception during asynchronous execution
+org.springframework.data.mongodb.ClientSessionException: state should be: open; nested exception is java.lang.IllegalStateException: state should be: open
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:148) ~[spring-data-mongodb-3.4.6.jar:3.4.6]
+	at org.springframework.data.mongodb.core.ReactiveMongoTemplate.potentiallyConvertRuntimeException(ReactiveMongoTemplate.java:2962) ~[spring-data-mongodb-3.4.6.jar:3.4.6]
+	at org.springframework.data.mongodb.core.ReactiveMongoTemplate.lambda$translateException$89(ReactiveMongoTemplate.java:2945) ~[spring-data-mongodb-3.4.6.jar:3.4.6]
+	at reactor.core.publisher.Flux.lambda$onErrorMap$28(Flux.java:7070) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onError(MonoFlatMapMany.java:255) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onError(FluxConcatArray.java:207) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onError(MonoIgnoreElements.java:84) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:192) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:259) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onError(MonoPeekTerminal.java:258) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:201) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoCreate.subscribe(MonoCreate.java:61) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:157) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1802) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoCallable.subscribe(MonoCallable.java:62) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4490) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onComplete(FluxSwitchIfEmpty.java:82) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.core.publisher.MonoCreate$DefaultMonoSink.success(MonoCreate.java:140) ~[reactor-core-3.4.25.jar:3.4.25]
+	at com.mongodb.reactivestreams.client.internal.ClientSessionHelper.lambda$createClientSessionMono$2(ClientSessionHelper.java:67) ~[mongodb-driver-reactivestreams-4.6.1.jar:na]
+	at com.mongodb.internal.connection.BaseCluster$ServerSelectionRequest.onResult(BaseCluster.java:449) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.BaseCluster$WaitQueueHandler.run(BaseCluster.java:519) ~[mongodb-driver-core-4.6.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.lang.IllegalStateException: state should be: open
+	at com.mongodb.assertions.Assertions.isTrue(Assertions.java:79) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.BaseCluster.selectServerAsync(BaseCluster.java:147) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.SingleServerCluster.selectServerAsync(SingleServerCluster.java:44) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.binding.AsyncClusterBinding.getAsyncClusterBindingConnectionSource(AsyncClusterBinding.java:147) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.binding.AsyncClusterBinding.getWriteConnectionSource(AsyncClusterBinding.java:137) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.operation.OperationHelper.withAsyncConnection(OperationHelper.java:609) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.operation.CreateIndexesOperation.executeAsync(CreateIndexesOperation.java:209) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.reactivestreams.client.internal.OperationExecutorImpl.lambda$execute$10(OperationExecutorImpl.java:120) ~[mongodb-driver-reactivestreams-4.6.1.jar:na]
+	at reactor.core.publisher.MonoCreate.subscribe(MonoCreate.java:58) ~[reactor-core-3.4.25.jar:3.4.25]
+	... 13 common frames omitted
+07-01-2023 22:27:33.941 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient.shutdown - Shutting down DiscoveryClient ...
+07-01-2023 22:27:36.953 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient.unregister - Unregistering ...
+07-01-2023 22:27:36.974 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient.unregister - DiscoveryClient_CARD-MICROSERVICE/card-microservice:42e259f0-3c10-451a-8fad-78265d266256 - deregister  status: 200
+07-01-2023 22:27:36.980 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient.shutdown - Completed shut down of DiscoveryClient
