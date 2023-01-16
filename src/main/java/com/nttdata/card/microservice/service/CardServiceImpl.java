@@ -23,7 +23,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
 @Transactional
 public class CardServiceImpl implements CardService {
     public static final String CUSTOMER_PERSONAL = "personal";
-    public static final String CUSTOMER_BUSINESS = "business";
     public static final String PRODUCT_ACTIVE = "Activos";
     public static final String CREDIT_PERSONAL = "Personal";
     public static final String CREDIT_BUSINESS = "Empresarial";
@@ -46,7 +45,7 @@ public class CardServiceImpl implements CardService {
     public Mono<Card> save(Mono<Card> card) {
         return card.map(this::validation)
                 .filterWhen(this::validTitular)
-                .filterWhen(this::validDebt)
+                .filterWhen(c -> validDebt(c.getTitularId()))
                 .map(mapper::toDocument)
                 .flatMap(repository::save)
                 .map(mapper::toModel);
@@ -134,8 +133,9 @@ public class CardServiceImpl implements CardService {
         return c;
     }
 
-    private Flux<Boolean> validDebt(Card card) {
-        return findAllByCustomer(card.getTitularId())
+    @Override
+    public Flux<Boolean> validDebt(String customerId) {
+        return findAllByCustomer(customerId)
                 .flatMap(c -> {
                     if (c.getCredit() != null && c.getCredit().getStatus().equals(Credit.StatusEnum.ACTIVO)) {
                         return consumptionClient.getConsumptions(c.getId())

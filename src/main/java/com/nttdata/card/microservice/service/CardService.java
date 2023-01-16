@@ -16,4 +16,5 @@ public interface CardService {
     Flux<Card> findAllByCustomer(String customerId);
     Mono<Card> findByNumber(String number);
     Mono<Consume> saveConsume(String cardId, Mono<Consume> consume);
+    Flux<Boolean> validDebt(String message);
 }
